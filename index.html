@@ -142,10 +142,19 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
+      <div class="publication-video" id="teaser-video">
+        <iframe
+          src="https://www.youtube.com/embed/VIDEO_ID?rel=0&showinfo=0&autoplay=1&mute=1&loop=1&playlist=VIDEO_ID&modestbranding=1&playsinline=1"
+          frameborder="0"
+          allow="autoplay; encrypted-media; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+      
+<!--       <video id="teaser" autoplay muted loop playsinline height="100%">
         <source src="./static/videos/teaser.mp4"
                 type="video/mp4">
-      </video>
+      </video> -->
       <h2 class="subtitle has-text-centered">
         <span class="dnerf">SkyMapper</span> streams autonomous indoor scans from a drone-mounted iPhone to the web for multi-user viewing.
       </h2>
