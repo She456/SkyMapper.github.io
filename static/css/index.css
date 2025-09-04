@@ -163,7 +163,7 @@ body {
   object-fit: cover;
 }
 
-.holder-frame { position: relative; overflow: hidden; background: #111; }
+.holder-frame { position: relative; overflow: hidden; background: #fff; }
 .holder-frame > img {
   position: absolute;
   inset: 0;
