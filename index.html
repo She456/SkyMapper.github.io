@@ -197,15 +197,22 @@ tr
     <div class="columns is-centered">
       <div class="column is-full">
         <h2 class="title is-3">Holder</h2>
+
         <div class="columns is-multiline is-variable is-3">
           <div class="column is-half">
             <figure class="image is-4by3 holder-frame no-crop">
-              <img src="./static/images/onShape 1.png" alt="Holder Image 1" loading="lazy">
+              <img src="./static/images/onShape 1.png" alt="Holder Image 1 (assembled view)" loading="lazy">
+              <figcaption class="has-text-grey is-size-7 has-text-centered" style="margin-top:.25rem">
+                Assembled holder. <strong>Blue parts are rubber damping pads</strong> for vibration isolation.
+              </figcaption>
             </figure>
           </div>
           <div class="column is-half">
             <figure class="image is-4by3 holder-frame no-crop">
-              <img src="./static/images/onShape 2.png" alt="Holder Image 2" loading="lazy">
+              <img src="./static/images/onShape 2.png" alt="Holder Image 2 (exploded view)" loading="lazy">
+              <figcaption class="has-text-grey is-size-7 has-text-centered" style="margin-top:.25rem">
+                Exploded view showing the layered structure and <strong>blue rubber pads</strong> at the frame interface and phone grips.
+              </figcaption>
             </figure>
           </div>
           <div class="column is-half">
@@ -218,6 +225,25 @@ tr
               <img src="./static/images/hardware Model 1.png" alt="Holder Image 4" loading="lazy">
             </figure>
           </div>
+        </div>
+
+        <div class="content" style="margin-top:1rem">
+          <h3 class="title is-4">Holder Design</h3>
+          <p>
+            We designed a lightweight iPhone holder for UAVs with three goals:
+            <strong>vibration isolation</strong>, <strong>unobstructed camera FoV</strong>, and
+            <strong>preserved center of gravity</strong>. Rubber <strong>damping pads (shown in blue in the CAD renders)</strong>
+            are placed between the mount and the airframe and on the phone grips to decouple propeller-induced vibrations from
+            the camera and IMU, improving real-time localization and 3D reconstruction. The mount keeps the phone offset from
+            frame elements to avoid occlusions, and its position is tuned to align the combined mass with the vehicle’s centerline.
+            The parts are <strong>3D-printed in PLA (~50 g)</strong> and tested in flight, showing stable fixation and reduced drift error.
+          </p>
+          <ul>
+            <li><strong>Vibration isolation:</strong> Blue rubber pads at frame interface and phone grips attenuate high-frequency jitter.</li>
+            <li><strong>Camera visibility:</strong> Offset/angle placement prevents frame occlusion in the camera’s field of view.</li>
+            <li><strong>Balance:</strong> Mount location preserves CG near the airframe axis for stable flight.</li>
+            <li><strong>Build:</strong> PLA 3D-printed (~50 g), validated in flight with improved localization stability.</li>
+          </ul>
         </div>
       </div>
     </div>
