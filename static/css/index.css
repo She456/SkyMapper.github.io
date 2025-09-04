@@ -163,17 +163,11 @@ body {
   object-fit: cover;
 }
 
-.holder-frame { position: relative; overflow: hidden; background: #111; }
 .holder-frame > img {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-.holder-frame.no-crop > img {
   object-fit: contain;
   object-position: center;
 }
