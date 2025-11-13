@@ -40,6 +40,13 @@
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
+
+  <!-- Minimal, optional styles just for the News section -->
+  <style>
+    .news .media + .media { margin-top: 0.75rem; }
+    .news .date-badge { min-width: 6.5rem; }
+    @media (max-width: 480px) { .news .date-badge { min-width: 5.8rem; font-size: .9rem; } }
+  </style>
 </head>
 <body>
 
@@ -58,6 +65,10 @@
           <i class="fas fa-home"></i>
       </span>
       </a>
+
+      <!-- NEW: quick anchor to News section -->
+      <a class="navbar-item" href="#news">News</a>
+      <a class="navbar-item" href="#holder">Holder</a>
 
       <div class="navbar-item has-dropdown is-hoverable">
         <a class="navbar-link">
@@ -156,8 +167,7 @@
     </div>
   </div>
 </section>
-tr
-  
+
 <section class="section">
   <div class="container is-max-desktop">
     <!-- Abstract. -->
@@ -190,8 +200,58 @@ tr
   </div>
 </section>
 
+<!-- ===================== NEW: News section ===================== -->
+<section class="section" id="news">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">News</h2>
+    <div class="box news">
+      <!-- How to add a news item: duplicate an <article class="media"> block below -->
 
-<section class="section">
+      <article class="media">
+        <figure class="media-left date-badge">
+          <p class="tag is-dark is-medium"><time datetime="2025-11-13">2025-11-13</time></p>
+        </figure>
+        <div class="media-content">
+          <p>
+            <strong>Project website launched</strong> — Initial public page for AirInspect is live.
+            Watch the <a href="#teaser-video">teaser</a> and check the <a href="#holder">holder</a> preview.
+          </p>
+        </div>
+      </article>
+
+      <hr class="my-3">
+
+      <article class="media">
+        <figure class="media-left date-badge">
+          <p class="tag is-dark is-medium"><time datetime="2025-11-12">2025-11-12</time></p>
+        </figure>
+        <div class="media-content">
+          <p>
+            <strong>Holder CAD renders uploaded</strong> — Added assembly and exploded views in the Holder section with vibration-damping details.
+          </p>
+        </div>
+      </article>
+
+      <!-- Example with an external link -->
+      <hr class="my-3">
+      <article class="media">
+        <figure class="media-left date-badge">
+          <p class="tag is-dark is-medium"><time datetime="2025-11-10">2025-11-10</time></p>
+        </figure>
+        <div class="media-content">
+          <p>
+            <strong>Teaser video uploaded</strong> — Short overview on YouTube. <a href="https://youtu.be/mgSrh6C3a68" target="_blank" rel="noopener">Open video</a>.
+          </p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+<!-- =================== /NEW: News section ===================== -->
+
+
+<section class="section" id="holder">
   <div class="container is-max-desktop">
     <!-- Holder Section. -->
     <div class="columns is-centered">
